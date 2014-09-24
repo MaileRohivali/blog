@@ -9,7 +9,9 @@
         </h1>
         <div class="post">
             <img class="post-img" src="http://d.gr-assets.com/books/1358275334l/2767052.jpg" alt="The Hunger Games">
-
+            <p>
+                <?=$post['username']?>
+            </p>
             <p>
                 <?=$post['post_text']?>
             </p>
