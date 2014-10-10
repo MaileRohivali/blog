@@ -15,6 +15,15 @@ class tags extends Controller
                             GROUP BY tag_id"
         );
     }
+    function index_ajax(){
+        echo "\$_POST:<br>";
+        var_dump($_POST);
+    }
+
+    function index_post(){
+        echo "\$_POST:<br>";
+        var_dump($_POST);
+    }
     function view()
     {
         $tag_name = $this->params[0];
@@ -22,3 +31,4 @@ class tags extends Controller
                             WHERE tag_name = '$tag_name'");
     }
 }
+
